@@ -1,17 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFrameworks>netcoreapp3.1;net5.0-windows;</TargetFrameworks>
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="CommandLineParser" Version="2.8.0" />
     <PackageReference Include="ConsoleProgressBar" Version="1.0.1" />
     <PackageReference Include="Goblinfactory.Konsole" Version="6.2.0" />
     <PackageReference Include="Npgsql" Version="5.0.0" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\WolvenKit.Bundles\WolvenKit.Bundles.csproj" />
     <ProjectReference Include="..\WolvenKit.Cache\WolvenKit.Cache.csproj" />
@@ -20,9 +17,22 @@
     <ProjectReference Include="..\WolvenKit.W3Speech\WolvenKit.W3Speech.csproj" />
     <ProjectReference Include="..\WolvenKit.Wwise\WolvenKit.Wwise.csproj" />
   </ItemGroup>
-
-
-
-
-
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>..\packages\System.Text.Json.8.0.4\lib\netstandard2.0\System.Text.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
 </Project>
